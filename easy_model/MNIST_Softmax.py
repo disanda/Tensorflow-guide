@@ -16,9 +16,11 @@ y_ = tf.placeholder('float',[None,10])
 
 cross_entropy = -tf.reduce_sum(y_*tf.log(y))
 train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)
+#第一个计算的变量,在下面循环中通过sess.run()计算
 
 correct_predict = tf.equal(tf.argmax(y,1),tf.argmax(y_,1))
 accuracy = tf.reduce_mean(tf.cast(correct_predict,"float"))
+#第二个计算的变量
 
 init = tf.initialize_all_variables()
 sess = tf.Session()
