@@ -4,6 +4,7 @@
 
 ## 梯度计算
 
-主要用 tf.GradientTape()
+主要用 tf.GradientTape(),一般在该方法返回对象打开的情况下输入方程表达式y=f(x)，一般用with tf.GradientTape() as xxxTape：语句,
+之后进行梯度求导。
 
 
