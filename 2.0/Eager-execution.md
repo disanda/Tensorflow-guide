@@ -1,6 +1,6 @@
 # 急速模式(Eager execution)
 
-该模式是一种发展趋势，类似PyTorch,参见：https://tensorflow.google.cn/guide/eager
+该模式是tf2.0后的新模式，是一种ML开发的发展趋势，类似PyTorch,参见：https://tensorflow.google.cn/guide/eager
 
 ## 梯度计算
 
