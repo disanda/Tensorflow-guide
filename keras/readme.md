@@ -11,6 +11,7 @@ input_train = sequence.pad_sequences(input_train, maxlen=maxlen)
 
 ## 2.Embedding
 
+类似一种降维，如word2vec，将一些相同的词性的词压缩要同一个向量内
 
 
 ## 参考
